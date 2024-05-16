@@ -23,8 +23,8 @@ console.log('Exercise 2 result:', foods);
 
 /*
 Exercise 3: Insert at the beginning
-1) Insert the string 'taco' at the beginning of the 
-`foods` array.
+1) Insert the string 'taco' at the beginning of 
+the `foods` array.
 Complete Exercise 3 in the space below:
 */
 
@@ -92,7 +92,6 @@ console.log('Exercise 8 result: soyIdx =', soyIdx);
 
 /*
 Exercise 9: Joining elements
-
 1) Use the `join()` method to concatenate the strings 
 in the `foods` array, separated by ' -> '. 
 2) Assign the result to a variable called `allFoods`. 
@@ -167,6 +166,7 @@ Complete Exercise 12 in the space below:
 const fizz = [];
 const buzz = [];
 const fizzbuzz = [];
+
 nums.forEach((divNum) => {
     if (divNum % 3 === 0) {
     fizz.push(divNum) }
@@ -185,7 +185,7 @@ nums.forEach((divNum) => {
   console.log('  buzz:', buzz);
   console.log('  fizzbuzz', fizzbuzz);
 
-  /*
+/*
 Exercise 13: Retrieve the Last Array
 1) Assign the last nested array in the `numArrays` below to a 
 variable named `numList`. As you do this, also fulfill these 
@@ -228,6 +228,7 @@ before the iterations.
 Complete Exercise 15 in the space below:
 */
 
+/*
 let total = 0;
 numArrays[0].forEach((digit) => {
     total += digit;
@@ -241,4 +242,15 @@ numArrays[2].forEach((digit) => {
 numArrays[3].forEach((digit) => {
     total += digit;
 })
+console.log('Exercise 15 result:\n', total);
+*/
+
+let total = 0;
+
+numArrays.forEach(array => {
+    array.forEach(number => {
+        total += number;
+    });
+});
+
 console.log('Exercise 15 result:\n', total);
